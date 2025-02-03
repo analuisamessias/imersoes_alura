@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/vars.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/styles/main-content.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
@@ -21,7 +23,7 @@
       <nav class="sidebar__navigation">
         <div class="logo">
           <a href="">
-            <img src="./assets/icons/logo-spotify.png" alt="Spotify logo" />
+            <img src="./src/assets/icons/logo-spotify.png" alt="Spotify logo" />
           </a>
         </div>
         <ul>
@@ -67,6 +69,44 @@
         </div>
       </div>
     </div>
+
+    <main>
+      <div class="main-container">
+        <nav class="header__navigation">
+          <div class="navigation">
+            <button class="arrow-left">
+              <img src="./src/assets/icons/small-left.png" alt="Seta esquerda"/>
+            </button>
+            <button class="arrow-left">
+              <img src="./src/assets/icons/small-right.png" alt="Seta direita"/>
+            </button>
+            </div>
+
+            <div class="header__search">
+              <img src="./src/assets/icons/search.png" alt="Pesquisar"/>
+              <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir hoje?"/> 
+            </div>
+
+            <div class="header__login">
+              <button class="subscribe">Inscreva-se</button>
+              <button class="login">Entrar</button>
+              </button>
+            </div>
+        </nav>
+
+        /* BODY NAVIGATION */
+        <div class="body__navigation">
+          <div id="result-playlists">
+            <div class="title__body">
+              <h1 id="greeting">Bem vindo</h1>
+              <h2 class="greeting-subtitle">Navegue por todas as seções</h2>
+           </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
     <footer class="disclaimer-premium">
       <div class="text">
         <p class="disclaimer-premium__title"> Teste o Premium de graça!</p>
@@ -75,7 +115,7 @@
         </p>
       </div>
       <div class="button">
-        <button class="disclaimer-premium__button">Obtenha Premium grátis</button>
+        <button class="disclaimer-premium__button">Inscreva-se grátis</button>
     </footer>
   </body>
 </html>
