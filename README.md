@@ -76,4 +76,44 @@ Observe que o seletor fornecido ao conjunto de regras define o escopo no qual a 
 
 - Entender as subdivisões dos layouts é extremamente importante.
 
-> Sempre que possível, utilize o **"Inspecionar"** paraa conseguir entender e identificar as seções corretamente
+> Sempre que possível, utilize o **"Inspecionar"** paraa conseguir entender e identificar as seções corretamente.
+
+## Aula 04 - JavaScript, CSS grid, Media Queries e Manipulação do DOM
+
+Uma carreira de Front-End não é firmada necessariamente só em HTML e CSS. Existem diversas subdivisões. Uma pessoa pode focar mais em CSS, outra mais em JavaScript.
+
+Quando se pensa em desenvolvimento, temos que pensar que uma mesma página, pode ser aberta em dispositivos diferentes: Web, IOS, Android, Tablets, iPad. Então, temos que pensar na resolução para cada tipo, tamanho de tela.
+
+> É recomendado que se faça um design para cada tipo de tamanho para facilitar a implementação.
+
+Garanta que o grid sempre vai cobrir o total de colunas que precisa.
+
+Utilize o arquivo **media-queries.css** para definir a diferença entre as telas.
+
+**APIs**
+Para usar imagens, referências no programa. É necessário que utilie APIs. Para fazeer o teste antes da API ficar pronta, o time de front, faz uma API imaginária para simular o funcionamento.
+
+> Utilize o CDN com as APIs para declarar no programa. Estude o funcionamento e inclua ainda mais APIs.
+
+> Comando Para instalar o Node global `npm i json-server -g` no terminal
+
+> Comando para gerar o http com JSON server para as apis inseridas: `json-server --watch api-artists/artists.json --port 3000`
+
+**JavaScript**
+Para fazer toda a engrenagem funcionar, use o JavaScript para fazer o programa funcionar. Ou seja, fazer as conexões das pesquisas.
+
+> Para evitar problemas com o JavaScript, declare ele no final do arquivo. Isso atrasa o carregamento evitando que o programa trave todo se o JavaScript falhar.
+
+- Melhor jeito de ver se o JavScript está funcionando no arquivo?
+  Use `console.log()` para imprimir algo e verifique no Console do programa.
+
+**DOM**
+Document Object Model, ou Modelo de Objeto de Documentos que vai ser uma representação como uma árvore do elemento em HTML. Como se cada nó fosse um elemento do HTML.
+
+Não se preocupe se você não lembra de cabeça todas as funções. O ideal é que você entenda o funcionamento delas, e chamada você pode usar copilot, intellisense.
+
+- Comparações em JavaScript
+  Se você usa `==` o programa compara as duas. Se você usa `===` o programa compara e verifica se são do mesmo tipo.
+
+- Promises
+  Programação Assíncrona para fazer requisições API, leitura em arquivos. Por exemplo o `then()`
